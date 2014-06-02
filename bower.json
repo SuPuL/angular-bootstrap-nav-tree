@@ -1,5 +1,5 @@
 {
-    "name": "supul-angular-bootstrap-nav-tree",
+    "name": "angular-bootstrap-nav-tree",
     "version": "0.2.0",
     "description":"An Tree Control for AngularJS, using CSS animation and Bootstrap style",
     "main":["dist/abn_tree_directive.js","dist/abn_tree.css"],
