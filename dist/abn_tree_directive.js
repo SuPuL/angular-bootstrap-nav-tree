@@ -7,7 +7,7 @@
     '$timeout', function($timeout) {
       return {
         restrict: 'E',
-        template: "<ul class=\"nav nav-list nav-pills nav-stacked abn-tree\">\n  <li ng-repeat=\"row in tree_rows | filter:{visible:true} track by row.branch.uid\" ng-animate=\"'abn-tree-animate'\" ng-class=\"'level-' + {{ row.level }} + (row.branch.selected ? ' active':'')\" class=\"abn-tree-row\">\n    <a href=\"\">\n      <i ng-class=\"row.tree_icon\" ng-click=\"user_expands_branch(row.branch)\" class=\"indented tree-icon\"> </i>\n     <span ng-click=\"user_clicks_branch(row.branch)\" class=\"indented tree-label\" ng-class=\"'tree-label-level-' + {{ row.level }}\">{{ row.label }} </span>\n    </a>\n  </li>\n</ul>",
+        template: "<ul class=\"nav nav-list nav-pills nav-stacked abn-tree\">\n  <li ng-repeat=\"row in tree_rows | filter:{visible:true} track by row.branch.uid\" ng-animate=\"'abn-tree-animate'\" ng-class=\"'level-' + {{ row.level }} + (row.branch.selected ? ' active':'')\" class=\"abn-tree-row\">\n    <a title=\"{{ row.label }}\" href=\"\">\n      <i ng-class=\"row.tree_icon\" ng-click=\"user_expands_branch(row.branch)\" class=\"indented tree-icon\"> </i>\n     <span ng-click=\"user_clicks_branch(row.branch)\" class=\"indented tree-label\" ng-class=\"'tree-label-level-' + {{ row.level }}\">{{ row.label }} </span>\n    </a>\n  </li>\n</ul>",
         replace: true,
         scope: {
           treeData: '=',
