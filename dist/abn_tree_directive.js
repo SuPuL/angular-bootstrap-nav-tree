@@ -272,6 +272,8 @@
                 return $timeout(function() {
                   return select_branch(b);
                 });
+              } else {
+                b.selected = false;
               }
             });
           }
